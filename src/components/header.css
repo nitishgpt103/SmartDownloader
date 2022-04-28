@@ -1,0 +1,81 @@
+.header{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+ }
+
+ .header--loader{
+     display: inline-block;
+ }
+ 
+.header--title{
+     display: inline-block;
+     margin-top: 1.5rem;
+ }
+.header--title h3{
+     display: inline-block;
+     font-size: 3rem;
+     font-family: 'PT Sans Narrow', sans-serif;
+     letter-spacing: 1px;
+     margin-bottom: 0px;
+     padding-bottom: 0px;
+     padding-top: 0.3rem;
+ }
+.header--gap{
+    display: inline-block;
+    flex: 5;
+}
+ .header--button{
+     min-height: 100%;
+     margin-right: 2rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .header--button button{
+     cursor: pointer;
+ }
+
+/* From uiverse.io by @aasisodiya */
+.header-btn {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+   }
+   
+   .header-btn:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   .header-btn:hover:not(:disabled) {
+    background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+   
+   .header-btnton:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+   @media only screen and (max-width: 900px) {
+       .header{
+           margin-bottom: 2rem;
+       }
+    .header--title h3{
+        font-size: 3rem;
+        margin-top: 0rem;
+    }
+    .header--title p{
+        font-size: 1rem;
+    }
+  }

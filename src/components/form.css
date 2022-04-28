@@ -1,0 +1,102 @@
+.form-container{
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    backdrop-filter: blur(0.6rem);
+    z-index: 5;
+}
+.close-btn{
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    transform: translate(50%,-50%);
+    cursor: pointer;
+    background-color: #DFDFDE;
+    border-radius: 150px;
+}
+
+.form-box{
+    position: relative;
+    display: block;
+    top: 25%;
+    width:50vw;
+    margin: 0 auto;
+    background-color: white;
+}
+.form-box table{
+    table-layout: fixed;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+.form-box table td{
+    padding: 1rem;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.65);
+    overflow-wrap: break-word;
+}
+
+.form-box input{
+    height: 3rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.card-1{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+
+
+
+  /* From cssbuttons.io by @adamgiebl */
+.cssbuttons-io-button {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.7rem 1.4rem 0.7rem 1.1rem;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7rem 1.5rem -0.5rem #14a73e98;
+    letter-spacing: 0.05rem;
+    border-radius: 20rem;
+    cursor: pointer;
+   }
+   
+   .cssbuttons-io-button svg {
+    margin-right: 0.4rem;
+   }
+   
+   .cssbuttons-io-button:hover {
+    box-shadow: 0 0.5rem 1.5rem -0.5rem #14a73e98;
+   }
+   
+   .cssbuttons-io-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0.3rem 1rem -0.5rem #14a73e98;
+   }
+
+
+   @media only screen and (max-width: 900px) {
+      .form-box{
+          top:10%;
+          width:90vw;
+          font-size: 1.2rem;
+      }
+      .form-box input{
+        height: 4rem;
+        padding-left: 1rem;
+        font-size: 1.2rem;
+      }
+}

@@ -1,0 +1,115 @@
+.mainbox-container{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5% 10%;
+}
+
+.mainbox-1{
+    text-align: center;
+}
+.mainbox-1 span{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.mainbox-1 button{
+    cursor: pointer;
+}
+
+.mainbox-2{
+  margin-top: 2.5rem;
+}
+.mainbox-2 table{
+    width: 60%;
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.mainbox-2 table td{
+    padding: 0.8rem;
+    cursor: pointer;
+}
+.mainbox-2 table tr:hover{
+    transform: scale(1.01);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.5);
+}
+.mainbox-2 table tr:nth-child(1):hover{
+    transform: scale(1);
+    box-shadow:none !important;
+}
+.mainbox-2 table tr:active{
+    transform: scale(0.99);
+}
+
+.mainbox-2 table tr:nth-child(even){
+   background-color: #EEEEEE;
+}
+
+.mainbox-2 table tr td:nth-child(1){
+    text-align: center;
+}
+.mainbox-2 table tr td:nth-child(3){
+    text-align: center;
+}
+.mainbox-2 table tr td:nth-child(4){
+    text-align: center;
+}
+
+.table-head{
+    background-color: white !important;
+}
+
+
+/* From cssbuttons.io by @Voxybuns */
+.mainbox-1 button {
+    /* Variables */
+   --button_radius: 0.75rem;
+   --button_color: #e8e8e8;
+   --button_outline_color: #000000;
+   font-size: 1rem;
+   font-weight: bold;
+   border: none;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+  }
+  
+  .mainbox-1 .button_top {
+   display: block;
+   box-sizing: border-box;
+   border: 2px solid var(--button_outline_color);
+   border-radius: var(--button_radius);
+   padding: 0.75rem 1.5rem;
+   background: var(--button_color);
+   color: var(--button_outline_color);
+   transform: translateY(-0.2rem);
+   transition: transform 0.1s ease;
+  }
+  
+  .mainbox-1 button:hover .button_top {
+    /* Pull the button upwards when hovered */
+   transform: translateY(-0.33rem);
+  }
+  
+  .mainbox-1 button:active .button_top {
+    /* Push the button downwards when pressed */
+   transform: translateY(0);
+  }
+
+
+  @media only screen and (max-width: 900px) {
+      .mainbox-container{
+         padding: 5% 0;
+        
+      }
+      .mainbox-2 table{
+          width: 90%;
+          margin: 0 auto;
+      }
+      .mainbox-2 table td{
+        padding: 0.8rem;
+        cursor: none;
+    }
+    .mainbox-2 table tr:active{
+        transform: scale(0.95);
+    }
+  }
