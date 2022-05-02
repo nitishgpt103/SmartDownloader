@@ -28,7 +28,7 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See Live WebApp deployed at [deployment](https://smart-downloader.herokuapp.com/) .
-https://smart-downloader.herokuapp.com/
+
 
 
 
